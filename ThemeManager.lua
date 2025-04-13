@@ -5,13 +5,13 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-		['Default'] 		= { 1, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"0F0F0F","AccentColor":"ffffff","SelectedTabColor":"101010","BackgroundColor":"1B1B1B","OutlineColor":"0B0B0B"}') },
-		['GameSense'] 		= { 2, httpService:JSONDecode('{"FontColor":"919191","MainColor":"101010","AccentColor":"9CB819","SelectedTabColor":"101010","BackgroundColor":"111111","OutlineColor":"2D2D2D"}') },
-		['Comet.pub'] 		= { 3, httpService:JSONDecode('{"FontColor":"5E5E5E","MainColor":"0F0F0F","AccentColor":"5D589D","SelectedTabColor":"1a191d","BackgroundColor":"0F0F0F","OutlineColor":"191919"}') },
-		['Tokyohook.cc'] 	= { 4, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","SelectedTabColor":"1a1a29","BackgroundColor":"16161f","OutlineColor":"433e58"}') },
-		['pandahook.cc'] 	= { 5, httpService:JSONDecode('{"FontColor":"AEAEAE","MainColor":"0F0F0F","AccentColor":"30406A","SelectedTabColor":"151515","BackgroundColor":"0F0F0F","OutlineColor":"171717"}') },
-		['Mae.lua'] 	        = { 6, httpService:JSONDecode('{"FontColor":"c5c5c5","MainColor":"0F0F0F","AccentColor":"ffc6fe","SelectedTabColor":"171717","BackgroundColor":"0f0f0f","OutlineColor":"191919"}') },
-	}
+    ['Default']         = { 1, httpService:JSONDecode('{"FontColor":"E1E1E1","MainColor":"121212","AccentColor":"7289DA","SelectedTabColor":"1E1E1E","BackgroundColor":"191919","OutlineColor":"0D0D0D"}') },
+    ['GameSense']       = { 2, httpService:JSONDecode('{"FontColor":"F0F0F0","MainColor":"0F0F0F","AccentColor":"A3E635","SelectedTabColor":"141414","BackgroundColor":"121212","OutlineColor":"232323"}') },
+    ['Midnight']        = { 3, httpService:JSONDecode('{"FontColor":"D8D8D8","MainColor":"0D0D0D","AccentColor":"6366F1","SelectedTabColor":"151515","BackgroundColor":"101010","OutlineColor":"202020"}') },
+    ['Nebula']          = { 4, httpService:JSONDecode('{"FontColor":"FFFFFF","MainColor":"13131F","AccentColor":"8B5CF6","SelectedTabColor":"1A1A2E","BackgroundColor":"151520","OutlineColor":"363663"}') },
+    ['Eclipse']         = { 5, httpService:JSONDecode('{"FontColor":"CCCCCC","MainColor":"0A0A0A","AccentColor":"3B82F6","SelectedTabColor":"121212","BackgroundColor":"0D0D0D","OutlineColor":"181818"}') },
+    ['Blossom']         = { 6, httpService:JSONDecode('{"FontColor":"E5E5E5","MainColor":"0D0D0D","AccentColor":"EC4899","SelectedTabColor":"141414","BackgroundColor":"101010","OutlineColor":"1D1D1D"}') },
+}
 
 	function ThemeManager:ApplyTheme(theme)
 		local customThemeData = self:GetCustomTheme(theme)

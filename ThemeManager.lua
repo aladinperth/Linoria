@@ -5,7 +5,7 @@ local ThemeManager = {} do
 
 	ThemeManager.Library = nil
 	ThemeManager.BuiltInThemes = {
-    ['Default']         = { 1, httpService:JSONDecode('{"FontColor":"E1E1E1","MainColor":"121212","AccentColor":"7289DA","SelectedTabColor":"1E1E1E","BackgroundColor":"191919","OutlineColor":"0D0D0D"}') },
+    ['Default']         = { 1, httpService:JSONDecode('{"FontColor":"E1E1E1","MainColor":"121212","AccentColor":"2EA8E6","SelectedTabColor":"1E1E1E","BackgroundColor":"191919","OutlineColor":"0D0D0D"}') },
     ['GameSense']       = { 2, httpService:JSONDecode('{"FontColor":"F0F0F0","MainColor":"0F0F0F","AccentColor":"A3E635","SelectedTabColor":"141414","BackgroundColor":"121212","OutlineColor":"232323"}') },
     ['Midnight']        = { 3, httpService:JSONDecode('{"FontColor":"D8D8D8","MainColor":"0D0D0D","AccentColor":"6366F1","SelectedTabColor":"151515","BackgroundColor":"101010","OutlineColor":"202020"}') },
     ['Nebula']          = { 4, httpService:JSONDecode('{"FontColor":"FFFFFF","MainColor":"13131F","AccentColor":"8B5CF6","SelectedTabColor":"1A1A2E","BackgroundColor":"151520","OutlineColor":"363663"}') },
